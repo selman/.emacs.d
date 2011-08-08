@@ -1,3 +1,4 @@
+;; shamelessly stolen from old emacs-starter-kit
 
 (require 'cl)
 (require 'package)
