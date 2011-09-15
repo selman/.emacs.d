@@ -9,6 +9,7 @@
 (require 'slmn-elpa)
 (require 'slmn-misc)
 (require 'slmn-ruby)
+(require 'slmn-haskell)
 
 (setq custom-file "~/.emacs.d/custom.el")
 (load custom-file)

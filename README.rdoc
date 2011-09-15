@@ -1,9 +1,10 @@
 = Selman's .emacs.d
 It is based on *Emacs* *24* (development version) and Emacs Starter Kit
 V2[https://github.com/technomancy/emacs-starter-kit/tree/v2]. It is
-targeting ruby developers. Master branch is installing and configuring
-simple system. You may look *slmn* branch for how to make your
-personal customization.
+targeting ruby & haskell developers. Master branch is installing and
+configuring simple system. You may look
+slmn[https://github.com/selman/.emacs.d/tree/slmn] branch for how to
+make your personal customization.
 
 == Requirements
 * Emacs 24 (development version)
@@ -16,7 +17,10 @@ personal customization.
 * Emacs Starter Kit
   V2[https://github.com/technomancy/emacs-starter-kit/tree/v2]
 * Latest emacs modes from ruby/misc.
-* YASnippet as submodule.
+* YASnippet as submodule save your personal snippets to *mysnippets"
+  directory.
+* haskell-mode snippets[https://github.com/polypus74/HSnippets] as
+  submodule.
 
 == Installation
 * Fork or clone this repository in the root of your home.

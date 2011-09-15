@@ -10,6 +10,7 @@
 ;; shamelessly stolen from old starter-kit
 (defvar starter-kit-packages (list 'starter-kit
                                    'auto-complete
+                                   'haskell-mode
                                    'smex)
   "Libraries that should be installed by default.")
 
