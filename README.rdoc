@@ -34,3 +34,13 @@ make your personal customization.
   support. For example, if you are using rvm.
  cd ~/.emacs.d
  ruby src/rsense/etc/configure > ~/.rsense
+
+== Updating
+* Close all Emacs sessions.
+* Delete *elpa* directory or clean your git repository with this
+  command after backed up your need files for-example *custom.el*
+ git clean -Xdn # to check which files will delete
+ git clean -Xdf # delete listed files before
+* Finally pull or fetch updated repository
+ git pull
+ 
