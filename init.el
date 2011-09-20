@@ -1,15 +1,15 @@
 (add-to-list 'load-path user-emacs-directory)
 
-(setq slmn-src-dir (concat user-emacs-directory "src"))
-(add-to-list 'load-path slmn-src-dir)
+(setq slmn-src-dir (concat user-emacs-directory "src")
+      custom-file (concat user-emacs-directory "custom.el"))
+
 (when (file-exists-p slmn-src-dir)
-  (dolist (l (directory-files slmn-src-dir nil "^[^#].*el$"))
-    (load l)))
+  (add-to-list 'load-path slmn-src-dir)
+  (mapc 'load (directory-files slmn-src-dir nil "^[^#].*el$")))
 
 (require 'slmn-elpa)
 (require 'slmn-misc)
 (require 'slmn-ruby)
 (require 'slmn-haskell)
 
-(setq custom-file "~/.emacs.d/custom.el")
-(load custom-file)
+(when (file-exists-p custom-file) (load custom-file))

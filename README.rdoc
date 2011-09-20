@@ -38,7 +38,7 @@ make your personal customization.
 == Updating
 * Close all Emacs sessions.
 * Delete *elpa* directory or clean your git repository with this
-  command after backed up your need files for-example *custom.el*
+  command after backed up your needed files for-example *custom.el*
  git clean -Xdn # to check which files will delete
  git clean -Xdf # delete listed files before
 * Finally pull or fetch updated repository

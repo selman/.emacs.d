@@ -29,6 +29,7 @@
        (setq ac-sources
              (append
               '(ac-source-yasnippet) ac-sources))
+       (esk-prog-mode-hook)
        (turn-on-haskell-doc-mode)
        (turn-on-haskell-indentation)
        (haskell-unicode))
