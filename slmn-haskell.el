@@ -1,5 +1,6 @@
 (eval-after-load 'haskell-mode
   '(progn
+     (autoload 'ghc-init "ghc" nil t)
 
      (defun haskell-unicode ()
        (substitute-patterns-with-unicode
@@ -28,10 +29,12 @@
      (defun slmn-haskell-setup ()
        (setq ac-sources
              (append
-              '(ac-source-yasnippet) ac-sources))
+              '(ac-source-yasnippet ac-source-ghc-mod) ac-sources))
        (esk-prog-mode-hook)
        (turn-on-haskell-doc-mode)
-       (turn-on-haskell-indentation)
+       (turn-on-haskell-indent)
+       (ghc-init)
+       (flymake-mode)
        (haskell-unicode))
 
      (add-hook 'haskell-mode-hook 'slmn-haskell-setup)))

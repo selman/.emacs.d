@@ -11,7 +11,7 @@
 (defvar starter-kit-packages (list 'starter-kit
                                    'flymake-ruby
                                    'auto-complete
-                                   'haskell-mode)
+                                   'ghc)
   "Libraries that should be installed by default.")
 
 (defun starter-kit-elpa-install ()

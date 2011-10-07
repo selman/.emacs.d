@@ -10,6 +10,9 @@ make your personal customization.
 * Emacs 24 (development version)
 * Openjdk or JRE
 * Ruby
+* haskell-platform[http://hackage.haskell.org/platform/]
+* ghc-mod [https://github.com/kazu-yamamoto/ghc-mod]
+ cabal install ghc-mod
 
 == Features
 * auto-complete[http://cx4a.org/software/auto-complete/]
@@ -19,6 +22,7 @@ make your personal customization.
 * Latest emacs modes from ruby/misc.
 * YASnippet as submodule save your personal snippets to *mysnippets"
   directory.
+* ghc-mod [https://github.com/kazu-yamamoto/ghc-mod]
 * haskell-mode snippets[https://github.com/polypus74/HSnippets] as
   submodule.
 
@@ -32,8 +36,7 @@ make your personal customization.
  git submodule update --init
 * You must run every ruby version change to use rsense completion
   support. For example, if you are using rvm.
- cd ~/.emacs.d
- ruby src/rsense/etc/configure > ~/.rsense
+ ruby ~/.emacs.d/src/rsense/etc/configure > ~/.rsense
 
 == Updating
 * Close all Emacs sessions.
@@ -43,4 +46,3 @@ make your personal customization.
  git clean -Xdf # delete listed files before
 * Finally pull or fetch updated repository
  git pull
- 
