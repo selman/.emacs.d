@@ -21,9 +21,6 @@
 	  (lambda ()
             (add-to-list 'ac-sources 'ac-source-files-in-current-dir)))
 
-(add-to-list 'auto-mode-alist '("\\.rdoc$" . rdoc-mode))
-(add-to-list 'ac-modes 'rdoc-mode)
-
 (defun unicode-symbol (name)
   "Translate a symbolic name for a Unicode character -- e.g., LEFT-ARROW
  or GREATER-THAN into an actual Unicode character code. "

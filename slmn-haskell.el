@@ -30,7 +30,6 @@
        (setq ac-sources
              (append
               '(ac-source-yasnippet ac-source-ghc-mod) ac-sources))
-       (esk-prog-mode-hook)
        (turn-on-haskell-doc-mode)
        (turn-on-haskell-indent)
        (ghc-init)

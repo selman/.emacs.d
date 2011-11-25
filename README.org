@@ -1,0 +1,58 @@
+* Selman's .emacs.d
+
+It is based on *Emacs 24* (development version) and [[https://github.com/technomancy/emacs-starter-kit/tree/v2][Emacs Starter
+Kit V2]]. It is targeting ruby & haskell developers. Master branch is
+installing and configuring simple system. You may look [[https://github.com/selman/.emacs.d/tree/slmn][slmn]] branch for
+how to make your personal customization.
+
+** Requirements
+- Emacs 24 (development version)
+- Openjdk or JRE
+- Ruby
+- [[http://hackage.haskell.org/platform/][haskell-platform]]
+- [[https://github.com/kazu-yamamoto/ghc-mod][ghc-mod]]
+#+BEGIN_EXAMPLE
+cabal install ghc-mod
+#+END_EXAMPLE
+
+** Features
+- [[http://cx4a.org/software/auto-complete/][auto-complete]]
+- [[http://cx4a.org/software/rsense/][rsense]]
+- [[https://github.com/technomancy/emacs-starter-kit/tree/v2][Emacs Starter Kit V2]]
+- YASnippet as submodule save your personal snippets to *mysnippets*
+  directory.
+- [[https://github.com/kazu-yamamoto/ghc-mod][ghc-mod]]
+- [[https://github.com/polypus74/HSnippets][haskell-mode]] snippets as submodule.
+
+** Installation
+- Fork or clone this repository in the root of your home.
+#+BEGIN_EXAMPLE
+git clone https://github.com/selman/.emacs.d
+#+END_EXAMPLE
+- Create your branch.
+#+BEGIN_EXAMPLE
+cd ~/.emacs.d
+git checkout -b YOUR_BRANCH
+#+END_EXAMPLE
+- Install sub-modules.
+#+BEGIN_EXAMPLE
+git submodule update --init
+#+END_EXAMPLE
+- You must run every ruby version change to use rsense completion
+  support. For example, if you are using rvm.
+#+BEGIN_EXAMPLE
+ruby ~/.emacs.d/src/rsense/etc/configure > ~/.rsense
+#+END_EXAMPLE
+
+** Updating
+- Close all Emacs sessions.
+- Delete *elpa* directory or clean your git repository with this
+  command after backed up your needed files for-example *custom.el*
+#+BEGIN_EXAMPLE
+git clean -Xdn # to check which files will delete
+git clean -Xdf # delete listed files before
+#+END_EXAMPLE
+- Finally pull or fetch updated repository
+#+BEGIN_EXAMPLE
+git pull
+#+END_EXAMPLE

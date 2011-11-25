@@ -1,3 +1,25 @@
+(require 'package)
+(add-to-list 'package-archives
+             '("marmalade" . "http://marmalade-repo.org/packages/") t)
+(add-to-list 'package-archives
+             '("tromey" . "http://tromey.com/elpa/") t)
+(package-initialize)
+
+(when (not package-archive-contents)
+  (package-refresh-contents))
+
+;; Add in your own as you wish:
+(defvar my-packages '(starter-kit
+                      starter-kit-ruby
+                      flymake-ruby
+                      auto-complete
+                      ghc)
+  "A list of packages to ensure are installed at launch.")
+
+(dolist (p my-packages)
+  (when (not (package-installed-p p))
+    (package-install p)))
+
 (add-to-list 'load-path user-emacs-directory)
 
 (setq slmn-src-dir (concat user-emacs-directory "src")
@@ -7,7 +29,6 @@
   (add-to-list 'load-path slmn-src-dir)
   (mapc 'load (directory-files slmn-src-dir nil "^[^#].*el$")))
 
-(require 'slmn-elpa)
 (require 'slmn-misc)
 (require 'slmn-ruby)
 (require 'slmn-haskell)

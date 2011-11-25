@@ -11,7 +11,6 @@
               '(ac-source-rsense ac-source-yasnippet) ac-sources))
        (require 'flymake-ruby)
        (flymake-ruby-load)
-       (esk-prog-mode-hook)
        (ruby-electric-mode t))
 
      (add-hook 'ruby-mode-hook 'slmn-ruby-setup)))
