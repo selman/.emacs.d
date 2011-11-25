@@ -8,6 +8,9 @@
 
 ;; Add in your own as you wish:
 (defvar my-packages '(starter-kit
+                      starter-kit-bindings
+                      starter-kit-lisp
+                      starter-kit-eshell
                       starter-kit-ruby
                       flymake-ruby
                       auto-complete
