@@ -16,12 +16,6 @@
 (ac-config-default)
 (ac-flyspell-workaround)                ;to fix auto-complete when flyspell-mode on
 
-;; filename completion for eshell-mode
-(add-to-list 'ac-modes 'eshell-mode)
-(add-hook 'eshell-mode-hook
-	  (lambda ()
-            (add-to-list 'ac-sources 'ac-source-files-in-current-dir)))
-
 (defun unicode-symbol (name)
   "Translate a symbolic name for a Unicode character -- e.g., LEFT-ARROW
  or GREATER-THAN into an actual Unicode character code. "
