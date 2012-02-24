@@ -4,3 +4,6 @@
 [submodule "src/snippets/haskell-mode"]
 	path = src/snippets/haskell-mode
 	url = https://github.com/polypus74/HSnippets.git
+[submodule "src/geiser"]
+	path = src/geiser
+	url = https://github.com/jaor/geiser.git
