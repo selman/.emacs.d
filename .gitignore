@@ -17,6 +17,7 @@ tmtags
 *.elc
 loaddefs.el
 custom.el
+edit-server.el
 session*
 auto-save-list
 places

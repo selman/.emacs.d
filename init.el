@@ -10,10 +10,10 @@
 (defvar my-packages '(starter-kit
                       starter-kit-bindings
                       starter-kit-lisp
-                      starter-kit-eshell
                       starter-kit-ruby
                       flymake-ruby
                       auto-complete
+                      markdown-mode
                       ghc)
   "A list of packages to ensure are installed at launch.")
 
