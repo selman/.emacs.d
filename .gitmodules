@@ -4,6 +4,3 @@
 [submodule "src/snippets/haskell-mode"]
 	path = src/snippets/haskell-mode
 	url = https://github.com/polypus74/HSnippets.git
-[submodule "src/auto-complete"]
-	path = src/auto-complete
-	url = https://github.com/m2ym/auto-complete.git

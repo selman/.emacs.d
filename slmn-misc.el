@@ -9,12 +9,9 @@
 (setq yas/trigger-key "<C-tab>")
 (yas/global-mode)
 
-(add-to-list 'load-path (concat slmn-src-dir "/auto-complete"))
 (require 'auto-complete-config)
-(add-to-list 'ac-dictionary-directories
-             (concat slmn-src-dir "/auto-complete/dict"))
 (ac-config-default)
-(ac-flyspell-workaround)                ;to fix auto-complete when flyspell-mode on
+(ac-flyspell-workaround)          ;to fix auto-complete when flyspell-mode on
 
 (defun unicode-symbol (name)
   "Translate a symbolic name for a Unicode character -- e.g., LEFT-ARROW

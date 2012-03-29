@@ -10,6 +10,7 @@
 (defvar my-packages '(starter-kit
                       starter-kit-ruby
                       flymake-ruby
+                      auto-complete
                       ghc)
   "A list of packages to ensure are installed at launch.")
 
