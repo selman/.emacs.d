@@ -9,9 +9,7 @@
        (setq ac-sources
              (append
               '(ac-source-rsense ac-source-yasnippet) ac-sources))
-       (require 'flymake-ruby)
-       (flymake-ruby-load)
-       (ruby-electric-mode t))
+       (flymake-ruby-load))
 
      (add-hook 'ruby-mode-hook 'slmn-ruby-setup)))
 

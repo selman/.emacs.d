@@ -31,3 +31,5 @@ elim
 history
 elpa
 .smex-items
+.org*
+mysnippets
