@@ -7,7 +7,7 @@
                          "~/.emacs.d/src/yasnippet/snippets"))
 (mapc 'yas/load-directory yas/snippet-dirs)
 (setq yas/trigger-key "<C-tab>")
-(yas/global-mode)
+(yas/global-mode t)
 
 (require 'auto-complete-config)
 (ac-config-default)

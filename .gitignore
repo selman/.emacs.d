@@ -33,3 +33,6 @@ elpa
 .smex-items
 .org*
 mysnippets
+newsticker
+src/geiser
+edit-server.el
