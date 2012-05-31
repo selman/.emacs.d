@@ -11,6 +11,7 @@
                       starter-kit-bindings
                       starter-kit-lisp
                       starter-kit-ruby
+                      htmlize
                       flymake-ruby
                       auto-complete
                       markdown-mode
