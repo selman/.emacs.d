@@ -1,6 +1,6 @@
 [submodule "src/yasnippet"]
 	path = src/yasnippet
-	url = https://github.com/emacsmirror/yasnippet.git
+	url = https://github.com/capitaomorte/yasnippet.git
 [submodule "src/snippets/haskell-mode"]
 	path = src/snippets/haskell-mode
 	url = https://github.com/polypus74/HSnippets.git
